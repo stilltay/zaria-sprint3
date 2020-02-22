@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Firebase Auth</title>
+    <title>Sign-up - Firebase Auth</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <script src="./js/zaria.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/zaria.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <p class="subtitle has-text-black">Login</p>
+                    <p class="subtitle has-text-black">Please login to proceed.</p>
                     <div>
                         <figure class="avatar">
                             <img src="https://placehold.it/128x128">
@@ -28,31 +28,31 @@
                         <form>
                             <div class="field">
                                 <div class="control">
-                                    <input id="txtEmail" class="input is-large" type="email" placeholder="Your Email" autofocus="">
+                                    <input class="input is-large" type="email" id="txtEmail" placeholder="Your Email">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input id="txtPassword" class="input is-large" type="password" placeholder="Your Password">
+                                    <input class="input is-large" type="password" id="txtPassword" placeholder="Your Password">
                                 </div>
                             </div>
                             <p id="errorMsg" style="color:red"></p>
-                            <button id="btnLogin" type="button" class="button is-block is-info is-large is-fullwidth">Sign In</button>
-                            <p>Not a member yet? Become a member: <a href="./pages/sign-up.html"><strong class="text-primary text-uppercase showSignUpForm">Sign Up</strong></a></p>
+                            <button type="button" id="btnSignUp" class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+                            <a href="../index.html"><strong class="text-primary text-uppercase showSignUpForm">Return to Login page.</strong></a>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
-
-    <script src="./js/login.js"></script>
+    <script src="../js/sign-up.js"></script>
 </body>
 
 </html>
